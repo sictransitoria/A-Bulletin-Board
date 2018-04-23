@@ -1,0 +1,110 @@
+body {
+	font-family: Avenir Next, sans-serif;
+	background-color: #e6e6e6;
+	color: #000000;
+	margin: 0 auto;
+
+}
+
+.container {
+	width: 42%;
+	margin-top: 15em;
+
+}
+
+.fullOut {
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+#bringEmOut {
+	margin: 30px 0px 0px 5px;
+
+}
+
+#bringEmOut a {
+	margin: 10px;
+
+}
+
+#bringEmOut h1 {
+	font-size: 110px;
+	font-weight: 100;
+	text-align: center;
+
+}
+
+#strongH1 {
+	font-weight: 500;
+
+}
+
+.form-control {
+	width: 38em;
+
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 300;
+
+}
+
+textarea {
+	resize: none;
+
+}
+
+.table td, .table th {
+	padding: 1.5em;
+	vertical-align: top;
+	border-top: 1px solid #dee2e6;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 100;
+
+}
+
+button:hover {
+	background-color: #004d1a;
+	transition: .7s;
+
+}
+
+button:active {
+  background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #fff;
+     -moz-box-shadow: inset 0px 0px 5px #fff;
+          box-shadow: inset 0px 0px 5px #fff;
+
+}
+
+.btn-add {
+	margin:30px 0px 50px 9px;
+
+}
+
+.btn-edit {
+	font-size: 12px;
+
+}
+
+.btn-delete {
+	font-size: 12px;
+
+}
+
+.btn-submit {
+	margin-left: 1px;
+
+}

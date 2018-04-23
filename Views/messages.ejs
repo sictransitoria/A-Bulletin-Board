@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Bulletin Board Web Application</title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+			<link rel="stylesheet" type="text/css" href="../style.css">
+		</head>
+
+		<body>
+
+			<div class="fullOut">
+
+			<header id="bringEmOut">
+			
+				<h1> bulletin board. </h1>
+
+
+				<a href="send-message.html"><button class="btn-add">Add a New Bulletin</button></a>
+
+			</header>
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Subject</th>
+							<th scope="col">Memo</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							
+							<% for(let i in result.rows) {%>
+							
+							<td><%=  result.rows[i].id  %></td>
+							<td><%=  result.rows[i].subject  %></td>
+							<td><%=  result.rows[i].memo  %></td>
+						
+						</tr>
+					</tbody>
+					<div class="buttonPower">
+						<tr>
+							<form method='GET' action='/edit/messages/<%= result.rows[i].id %>' >
+							<td><button class="btn-edit">  EDIT  </button></td>
+							</form>
+
+							<form method='POST' action='/delete/messages/<%= result.rows[i].id %>' >
+							<td><button class="btn-delete">  DELETE  </button></td>
+							</form>
+						</tr>
+					</div>
+						
+						<% } %>
+					
+				</table>
+			</div>
+		</body>
+	</html>
