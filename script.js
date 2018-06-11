@@ -1,11 +1,14 @@
-
+// Modules
 const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
 const {Client} = require('pg');
 const dotenv = require('dotenv');
+
+// Create a New Express Application
 const app = express();
 
+// Connect to Database
 const connectionString = 'postgresql://postgres:Runner4life!@localhost:5432/bulletinboard'
 
 app.use(bodyParser.json());
@@ -117,6 +120,6 @@ app.post('/delete/messages/:id', (req, res) => {
 });
 
 
-app.listen(8080, () => {
-    console.log('Server Started on Port: 8080');
+app.listen(3000, () => {
+    console.log('Server Started on Port: 3000');
 });
