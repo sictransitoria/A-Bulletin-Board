@@ -1,4 +1,4 @@
-<h1>A Bulletin Board
+<h1>A Bulletin Board</h1>
 
 Back in the late 90's, writing in an online guestbook or message board was the thing to do!
 
